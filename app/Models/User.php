@@ -9,12 +9,14 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Backpack\CRUD\app\Models\Traits\CrudTrait; // <------------------------------- this one
 use Spatie\Permission\Traits\HasRoles;// <---------------------- and this one
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
     use CrudTrait; // <----- this
     use HasRoles; // <------ and this
+    use SoftDeletes;
 
     /**
      * The attributes that are mass assignable.

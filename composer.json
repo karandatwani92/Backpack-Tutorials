@@ -8,6 +8,7 @@
         "php": "^8.0.2",
         "backpack/crud": "^5.3",
         "backpack/permissionmanager": "^6.0",
+        "backpack/pro": "^1.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
@@ -64,5 +65,11 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "backpack": {
+            "type": "composer",
+            "url": "https://repo.backpackforlaravel.com/"
+        }
+    }
 }
